@@ -1,0 +1,14 @@
+<%= form_for :song, url: songs_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :audio %><br>
+    <%= f.file_field :audio %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

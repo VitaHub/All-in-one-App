@@ -1,0 +1,11 @@
+<h1>Songs</h1>
+<% @songs.each do |s| %>
+  <table>
+    <tr>
+      <td><%= s.title %></td>
+      <td><%= audio_tag s.audio, controls: true %></td>
+    </tr>
+  </table>
+<% end %>
+<br>
+<%= link_to "add song", new_song_path %>
