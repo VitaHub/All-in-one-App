@@ -6,11 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-base64'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'pg'
 gem 'pry-rails', group: :development
 gem 'puma', '~> 3.7'
+gem 'rack-cors'
 gem 'rails', '~> 5.1.2'
 gem 'rubocop', require: false
 gem 'sass-rails', '~> 5.0'

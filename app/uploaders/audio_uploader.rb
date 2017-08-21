@@ -8,7 +8,7 @@ class AudioUploader < CarrierWave::Uploader::Base
   # storage :fog
 
   def filename
-    super
+    [model.title.tr(' ', '_'), '.mp3'].join
   end
 
   def store_dir
